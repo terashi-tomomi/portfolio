@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example Portfolio</title>
-</head>
-<body>
-    <h1>Hello GitHub.io !</h1>
+   
+    <title>Cresta Design | お問い合わせ</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contact.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-title">Cresta Design</div>
+        <div class="header-menu nav-wrapper">
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#!" >Concept</a></li>
+              <li class="nav-item"><a href="#!">Service</a></li>
+              <li class="nav-item"><a href="#!">Works</a></li>
+              <li class="nav-item"><a href="#!">Contact</a></li>
+          </nav>
+        </div>
+        
+        <!-- ハンバーガーメニュー入れる -->
+        <button class="burger-btn">
+          <span class="bar bar_top"></span>
+          <span class="bar bar_mid"></span>
+          <span class="bar bar_bottom"></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="fv">
+      <div class="main-copy">
+        <p class="section-title">Contact</p>
+    </div>
+    <div class="section-bottom text-white">Contact us</div>
+    </section>
+
+    <section class="form">
+      <p>お問い合わせ内容</p>
+      <ul class="checkbox-list">
+        <li><input type="checkbox" id="01-A" name="checkbox01" checked="checked">
+          <label for="01-A" class="checkbox01">資料請求</label>
+        </li>
+        <li><input type="checkbox" id="01-B" name="checkbox01">
+          <label for="01-B" class="checkbox01">お電話でのご相談を希望</label>
+        </li>
+        <li><input type="checkbox" id="01-C" name="checkbox01">
+          <label for="01-C" class="checkbox01">申し込み</label>
+        </li>
+
+      </ul>
+
+      
+      
+      
+      <div class="form-item">
+      <p>担当者名</p><input type="text" name="your_name">
+
+      <p>電話番号</p><input id="num" type="number" name="tel_num">
+      
+      <p>メールアドレス</p><input id="mail" type="email" name="mail">
+      
+      <p>その他</p><textarea id="comment" name="comment"></textarea>
+    </div>
+    </section>
+
+    <section class="btn">
+    <a href="#!" class="link-btn">Submit</a>
+  </section>
+
+
+
+
+
+
+  <footer>
+    <p class="footer-text">©︎cresta.design all rights reserved</p>
+  </footer>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
