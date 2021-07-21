@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+
+/* ベース */
+
+body {
+  font-family: 'Noto Serif' , 'Noto Serif JP' , serif;
+  letter-spacing: 1px;
+  color: #171717;
+}
+
+img{
+  vertical-align: bottom;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-white{
+  color: #fff;
+}
+
+.link-btn{
+  display: block;
+  width: 235px;
+  line-height: 60px;
+  margin: 0 auto 70px;
+  background-color: #f7d43f;
+  box-shadow: 0 0 6px #1b1310;
+  border-radius: 30px;
+  text-align: center;
+  color: #171717;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.link-btn:hover{
+  opacity: .7;
+  transition: .3s;
+}
+
+/*  ---------------- */
+/* ヘッダー部分 */
+/*  ---------------- */
+
+.header {
+  padding: 19px 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: 100%;
+  transition: .3s;
+
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+.header a:hover{
+  opacity: .7;
+  transition: .3s;
+}
+
+.header-title a{
+  color: #fff;
+  font-size: 26px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item{
+  margin-right: 30px;
+
+}
+.nav-item:last-of-type{
+  margin-right: 0;
+}
+
+.burger-btn{
+  display: none;
+}
+
+/*  ---------------- */
+/*        fv          */
+/*  ---------------- */
+
+.fv{
+  height: 453px;
+  min-height: 550px;
+  /* position: relative; */
+  background: url(./img/contact-page-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.section-title{
+  max-width: 1000px;
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 185px;
+
+
+}
+
+.section-bottom{
+font-weight: bold;
+letter-spacing: 2px;
+  margin: 0 auto;
+  font-size: 90px;
+  opacity: .05;
+  margin: 20px 0 0 48px;
+  
+}
+
+/*  ---------------- */
+/*    フォーム    */
+/*  ---------------- */
+
+.form {
+  max-width: 700px;
+  margin: 100px auto 80px;
+}
+
+.form p{
+  font-weight: bold;
+
+}
+
+/* チェックボックス01 */
+
+
+.checkbox-list{
+  display: flex; 
+}
+
+.form-item input{
+margin-bottom: 25px;
+}
+
+.checkbox-list:last-of-type {
+  padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+input[type=checkbox] {
+  display: none;
+}
+.checkbox01 {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 30px;
+  position: relative;
+  width: auto;
+}
+.checkbox01::before {
+  background: #fff;
+  border: 1px solid #171717;
+  content: '';
+  display: block;
+  height: 16px;
+  left: 5px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  width: 16px;
+}
+.checkbox01::after {
+  border-right: 3px solid #171717;
+  border-bottom: 3px solid #171717;
+  content: '';
+  display: block;
+  height: 9px;
+  left: 10px;
+  margin-top: -7px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 5px;
+}
+
+input[type=checkbox]:checked + .checkbox01::after {
+  opacity: 1;
+}
+
+
+
+input {
+  width: 100%;
+}
+
+textarea{
+  width:100%;
+  height: 171px;
+}
+
+.btn {
+  max-width: 700px;
+  margin: 0px auto 80px;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 80px;
+
+   }
+  
+  .footer-text {
+    font-size:14px;
+    text-align: center;
+    padding: 30px;
+
+  }
+
+
+
+  @media screen and (max-width:768px){
+  
+  .header {
+    padding: 30px 15px 0 15px;
+  }
+
+  .fv{
+    max-height: 360px;
+  }
+
+  .form {
+    padding: 0 15px 0 15px;
+  }
+
+/* ハンバーガー */
+
+.header-nav {
+  display: none;
+
+}
+
+  button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+
+  /* .burger-btn{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 4vw;    
+  } */
+
+  .burger-btn{
+    display: block;
+    z-index: 2;
+    }
+
+  .burger-btn .bar{
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+ 
+  }
+  .bar_top{
+    margin-bottom: 8px;
+  }
+  .bar_mid{
+    margin-bottom: 8px;
+  }
+
+
+  /* ハンバーガーメニューが開いたとき */
+  .burger-btn.cross .bar_top{
+    transform: rotate(45deg) translate(8px,8px);
+    transition: .3s;
+  }
+  .burger-btn.cross .bar_mid{
+    opacity: 0;
+    transition: .3s;
+  }
+  .burger-btn.cross .bar_bottom{
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition: .3s;
+  }
+  body.noscroll{
+    overflow: hidden;
+  }
+
+/* 開いたときのメニュー画面 */
+
+    .nav-wrapper{
+  
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+       }
+       .header-nav{
+        width: 100%;
+        height: 100%;
+        background-color:#1B1310;
+        z-index: 2;
+      }
+       .header-nav .nav-list{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+      .header-nav .nav-item{
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+
+
+
+/* セクション */
+
+.fv {
+  min-height: 450px;
+}
+
+.section-title{
+font-size: 30px;
+padding-top: 175px;
+line-height: 1.6;
+  }
+.section-bottom{
+  font-size: 40px;
+ line-height: 3.7;
+ letter-spacing: 2px;
+ margin :40px 15px;
+
+  
+  }
+  .checkbox-list{
+    display: block;
+  }
+
+ 
+
+
+
+  }
