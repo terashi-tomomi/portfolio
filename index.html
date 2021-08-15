@@ -1,157 +1,157 @@
 <!DOCTYPE html>
 <html lang="ja">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <title>練習用２</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-   <!-- slickのCSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style02.css">
-
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-    <header class="header">
+<!-- body -->
+
+  <body id="top">
+    <header class="header" >
       <div class="header-top">
-        <div class="header-title"><Cresta href="">Cresta Design</a></div>
-        <div class="header-menu nav-wrapper">
-          <nav class="header-nav">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="#concept">Concept</a></li>
-              <li class="nav-item"><a href="#service">Service</a></li>
-              <li class="nav-item"><a href="#works">Works</a></li>
-              <li class="nav-item"><a href="#contact">Contact</a></li>
-          </nav>
-        </div>
-        
-        <!-- ハンバーガーメニュー入れる -->
-        <button class="burger-btn">
-          <span class="bar bar_top"></span>
-          <span class="bar bar_mid"></span>
-          <span class="bar bar_bottom"></span>
-        </button>
+        <p class="header-title"><a href="#top">Portfolio</a></p>
+
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#works">Works</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <!-- ハンバーガーメニュー -->
+            <button class="burger-btn">
+              <span class="bar bar_top"></span>
+              <span class="bar bar_mid"></span>
+              <span class="bar bar_bottom"></span>
+            </button>
+          </ul>
+       </div>
       </div>
     </header>
 
-        <!-- fv -->
-      <section class="fv">
-        <ul class="slider">
-          <li><img src="./img/fv-bgi_01@2x.jpg" alt=""></li>
-          <li><img src="./img/fv-bgi_02@2x.jpg" alt=""></li>
-          <li><img src="./img/fv-bgi_03@2x.jpg" alt=""></li>
-        </ul>
+    <!-- fv -->
 
-        <div class="main-copy">
-          <p class="fv-title">Design for Smile.</p>
-          <p class="fv-subtitle">快適なオフィスを<br class="sp-br">デザインする</p>
-       </div>
-      </section>
+    <section class="fv fv-bgi">
+      <p class="fv-title">Portfolio</p>
+      <p class="fv-subtitle">Tomomi Terashi</p>
+    </section>
 
+    <!-- works -->
 
-    <div class="contents-wrapper"><!-- メインコンテンツ -->
-      <section class="section-wrapper" id="concept">
-        <h2 class="section-title title-left">CONCEPT</h2>
-        <div class="section-inner">
-          <p class="concept-lead">“働きたくなる空間”をデザインすることで<br class="pc-br">
-            人々を幸せにする。</p>
-          <!-- 横並びコンテンツ -->
+    <section class="section-content" id="works">
+      <p class="section-title">Works</p>
 
-          <div class="concept-contents">
-            <p class="concept-text">
-              私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。
-              <div class="concept-img-wrapper">
-                <img src="./img/concept-image@2x.jpg" class="concept-img">
-              </div>
+      <ul class="works-list">
+        <li class="works-card">
+          <a href="#!">
+            <div class="works-list-img"><img src="./img/work01.png"></div>
+            <p class="works-text-title">コーディング１</p>
+            <p class="works-text">フラワーショップのデモサイトです。<br>
+                ・HTML・CSSの使用<br>
+                ・配置や配色がシンプルなコーディング<br>
+                ・レスポンシブ対応<br>
+                ・jQueryを使用し、ハンバーガーメニューの実装<br></p>
+            </a>
+          </li>
+        <li class="works-card">
+          <a href="#!">
+            <div class="works-list-img"><img src="./img/work02.png"></div>
+            <p class="works-text-title">コーディング２</p>
+            <p class="works-text">黒を貴重としたデモサイトです。<br>
+              ・HTML・CSSの使用<br>
+              ・シンプルなコーディング<br>
+              ・レスポンシブ対応<br>
+              ・jQueryを使用し、ハンバーガーメニューの実装<br></p>
+          </a>
+        </li>
+      </ul>
 
-          </div>
+      <ul class="works-list">
+        <li class="works-card">
+          <a href="#!">
+            <div class="works-list-img"><img src="./img/work03.png"></div>
+            <p class="works-text-title">コーディング３</p>
+            <p class="works-text">会社のデモサイトコーデイングです。<br>
+              ・HTML・CSS・jQueryの使用<br>
+              ・画像のスライドショーを実装<br>
+              ・レスポンシブ対応<br>
+              ・コンタクトページへのリンク可能<p2>(PHPは習得中です）</p2><br></p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- about -->
+
+    <section class="section-content" id="about">
+      <p class="section-title">About</p>
+
+      <div class="about-list">
+        <div class="about-item"><img src="./img/p-bg02.jpg"></div>
+
+        <div class="about-item">
+          <table>
+            <tr>
+              <td class="td_name">氏名</td><td class="td_left"><div class="v_line_left">知美</div></td>
+            </tr>
+            <tr>
+              <td class="td_name">経歴</td><td><div class="v_line_left2"><p>埼玉県在住<br>
+                2012年　生命保険会社　入社　営業職兼窓口業務<br>
+                2016年　生命保険会社　退社<br>
+                2016年　卸売業兼メーカー　入社　営業事務<br>
+                2017年　卸売業兼メーカー　退社　<br>
+                2018年4月　産休育休を経て、同保険会社へ復職<br><br>
+                後に独学にてプログラミングを学習し、<br>
+                現在WEB制作のフリーランスとして活動しています</p></div></td>
+            </tr>
+            <tr>
+              <td class="td_name">資格</td><td><div class="v_line_left"> FP3級<br>
+                普通自動車第一種運転免許</div></td>
+            <tr>
+              <td class="td_name">趣味</td><td><div class="v_line_left">料理と食べること</div></td>
+            </tr>
+          </table>
         </div>
-        <div class="section-bottom text-right">Our Concept</div>
-      </section>
+      </div>
 
-      <section class="section-wrapper bg-works" id="works">
-        
-        <div class="works">
-          <h2 class="section-title text-right text-white">Works</h2>
-          <!-- 画像 -->
-            <ul class="works-list">
-              <li class="works-card">
-                <a href="#!">
-                  <div class="works-list-img"><img src="img/card-img01@2x.jpg"></div>
-                  <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-                </a>
-              </li>
+      <p class="section-title">Skill</p>
+      <ul class="skill-list">
+        <li class="skill-item skill-item-bgi"><p>HTML</p></li>
+        <li class="skill-item skill-item-bgi"><p>CSS</p></li>
+        <li class="skill-item skill-item-bgi"><p>jQuery</p></li>
+      </ul>
+      <p class="skill-text">新たな言語や技術の習得、デザインの忠実な再現、解りやすいコード表記を心がけています</p>
 
-              <li class="works-card">
-                <a href="#!">
-                  <div class="works-list-img"><img src="img/card-img02@2x.jpg"></div>
-                  <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-                </a>
-              </li>
+    </section>
 
-              <li class="works-card">
-                <a href="#!">
-                  <div class="works-list-img"><img src="img/card-img03@2x.jpg"></div>
-                  <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-                </a>
-              </li>
-            </ul>
+    <!-- contact -->
 
-          <!-- ボタン -->
-          <div class="btn">
-            <!-- <a href="#!" class="btn-black">View more</a> -->
-            <a href="#!" class="link-btn">view more</a>
-          </div>
+    <section class="section-content" id="contact">
+      <p class="section-title">Contact</p>
 
-          <div class="section-bottom text-white">Our Works</div>
-        </div>
-     
-      </section>
-      
-      <section class="section-wrapper" id="service">
-        <!-- h2 -->
-        <h2 class="section-title  title-left">Service</h2>
-      </section>
-      <section class="section-wrapper-service">
-        <!-- 画像 -->
-          <ul class="service-card">
-            <li class="service-item service_1"><a href="#!">Hearing</a></li>
-            <li class="service-item service_2"><a href="#!">Planning</a></li>
-            <li class="service-item service_3"><a href="#!">Direction</a></li>
-          </ul>
-          <div class="section-bottom text-right our-service">Our Service</div>
-        </div>
-      </section>
-      
-      <section class="section-wrapper bg-contact" id="contact">
-        <div class="contact">
-          <!-- h2 -->
-          <h2 class="section-title text-white text-right">Contact</h2>
-          <!-- 問い合わせボタン -->
-          <div class="section-inner">
-            <p class="contact-text">お気軽にご相談ください。</p>
-            <a href="contact-index.html" class="link-btn">Contact</a>
-          </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiSLoN6SyuYlHNqK6EuMbDJrVrymwziUR9DfGhXbJUNMvBGQ/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+    </section>
+ 
 
-          <div class="section-bottom text-white">Contact us</div>
-        </div>
-      </section>
-      
-    </div><!-- contents-wrapperの終わり -->
+
+
+
 
     <footer>
-      <p class="footer-text">©︎cresta.design all rights reserved</p>
+      <p class="footer-text">Copyright©2021 Tomomi All Rights Reserved.</p>
     </footer>
+
     <!-- スクリプトコード -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- slickのJavaScript -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>
