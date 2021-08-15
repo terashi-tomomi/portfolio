@@ -1,0 +1,430 @@
+@charset "UTF-8";
+* {
+margin: 0px;
+padding: 0px;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif,'Noto Sans JP', sans-serif;
+}
+
+h2{
+  font-size: 3.6rem;
+ letter-spacing: 2px;
+}
+
+h3{
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+.contents-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/*  */
+  
+header {
+  width: 100%;
+  height: 740px;
+  background: url(img/fv-bgi@2x.jpg);
+  background-size: cover;
+}
+
+.header_top{
+  background-color: #1B1310;
+  color: #fff;
+  height:74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid #fff;
+  position: fixed;
+  width:100%;
+}
+
+.header_top ul{
+  display: flex;
+}
+
+.header_top li{
+  margin-right: 55px;
+  list-style: none;
+  font-size: 1.6rem;
+  
+}
+
+.nav-item a {
+  color:#fff;
+  text-decoration: none;
+}
+
+.burger-btn{
+  display: none;
+}
+
+.header_top_logo{
+  font-size: 2.6rem;
+  margin-left: 55px;
+}
+
+/* トップタイトル */
+
+.header_title {
+  padding-top: 264px;
+  padding-bottom: 264px;
+}
+
+h1{
+  font-size: 5rem;
+  font-weight: normal;
+  color: #fff;
+  width: 450px;
+  height: 136px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  border: solid 2px #fff;
+  line-height: 135px;
+  letter-spacing: 3px;
+}
+
+/* コンテンツ */
+
+.contents_title{
+  font-size: 3.6rem;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.contents_title_sub{
+  text-align: left;
+  line-height: 50px;
+  padding-bottom:20px;
+}
+
+.contents_text{
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+}
+
+.about{
+  width: 100%;
+  padding-top: 100px;
+}
+
+/* サービス */
+
+.service{
+  max-width: 1030px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 120px;
+}
+
+.contents_service{
+  display: flex;
+  vertical-align: top;
+  flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contents_items{
+  max-width: 480px;
+  background-color:#fff;
+  flex-wrap: wrap;
+  max-width: 480px;
+  max-height: 240px;
+  padding-bottom: 30px;
+}
+  
+.contents_title_sub {
+  padding-top: 20px;
+}
+
+
+.contents_text{
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.reverse{
+  margin-top: 50px;
+  flex-direction: row-reverse;
+}
+
+/* ニュース */
+
+.news{
+  width: 100%;
+  padding-top: 100px;
+}
+
+.news_contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+.news_card{
+ max-width: 320px;
+ box-shadow: 1px 1px 4px 2px #dcdcdc;
+}
+
+.news-text{
+  font-size: 1.4rem;
+  font-weight: normal;
+  padding:15px 25px;
+}
+
+
+/* 問い合わせフォーム */
+
+.contact_form{
+  max-width: 100%;
+  height: 720px;
+  padding-top: 150px;
+}
+
+.contact_form p{
+  font-size: 1.6rem;
+}
+
+form,
+input{
+  width:700px;
+  height: 28px;
+  margin:0 auto;
+  box-sizing:border-box;
+}
+.contact_form input{
+margin-bottom: 20px;
+}
+
+textarea{
+  width:100%;
+  height: 170px;
+  margin:0 auto;
+}
+
+/* 送信ボタン */
+
+.btn{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-black {
+  color: #fff;
+  background-color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 20px 90px;
+  border-radius: 100vh;
+  width: 100px;
+  height: 30px;
+}
+
+/* フッター */
+
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.footer_text {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+/* レスポンシブ */
+
+@media screen and (max-width:768px) {
+  h3{
+  font-size: 2rem;
+  margin-bottom: 30px;
+  }
+
+  .contents-wrapper{
+    padding:100px 5% 50px;
+  }
+
+
+  .news{
+    padding-top:0px;
+  }
+
+  .header_top_logo{
+    margin-left: 25px;
+    font-size: 2rem;
+  }
+
+  .header_top li{
+    margin-right: 25px;
+  }
+
+  header {
+    width: 100%;
+    height: 740px;
+    background: url(img/fv-bgi_sp@2x.jpg);
+    background-size: cover;
+  }
+
+  .service{
+    max-width: 768px;
+    padding-top:60px;
+  }
+
+
+  /* ハンバーガーメニュー */
+
+  .header_top_menu{
+    display: none;
+  }
+
+  .burger-btn{
+    display: block;
+    width: 39px;
+    height: 39px;
+    position:relative;
+    z-index: 3;
+    background-color:transparent;
+    border:none;
+    margin: 10px;
+  }
+
+  .bar{
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+
+  .bar_top{
+    top: 10px;
+  }
+  .bar_mid{
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bar_bottom{
+    bottom: 10px;
+  }
+
+  .burger-btn.close .bar_top{
+    transform: translate(-50%,10px) rotate(45deg);
+    transition: transform .3s;
+  }
+  .burger-btn.close .bar_mid{
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .burger-btn.close .bar_bottom{
+    transform: translate(-50%,-8px) rotate(-45deg);
+    transition: transform .3s;
+  }
+
+    /* クリックした時の画面メニュー */
+
+  .nav-wrapper{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .header-nav{
+    width: 100%;
+    height: 100%;
+    background-color:#1B1310;
+    z-index: 2;
+  }
+  .header-nav .nav-list{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .header-nav .nav-item{
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+
+  /* タイトル */
+  .header_title h1{
+    font-size: 3rem;
+    width: 70%;
+    height: 50%;
+  }
+
+  /* サービス */
+  .contents_service{
+    flex-direction:column;
+    margin:50px auto;
+    flex-direction: column-reverse;
+  }
+
+  .contents_items{
+    margin-top: 40px;
+    margin:0;
+  }
+
+  .reverse{
+    flex-direction: column-reverse;
+  }
+
+  .contents_items img{
+    height:150px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  /* ニュース */
+
+  .news_contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .news_card{
+    margin: 50px 0 0;
+  }
+
+  .news_card  li:first-child{
+    margin-top: 0;
+  }
+
+  .contact_form{
+    padding-top:100px;
+  }
+  
+  form,
+  input,
+  textarea{
+    max-width: 99%;
+  }
+
+}
