@@ -34,7 +34,7 @@ a {
   font-style: italic;
   letter-spacing: 6px;
   margin:0 auto 80px;
-  padding: 0 20px; 
+  padding: 10px 20px; 
 }
 .section-title::after{
  content: "";
