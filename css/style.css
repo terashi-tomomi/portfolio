@@ -69,7 +69,9 @@ img {
   vertical-align: middle;
 }
 
-
+.sp-br{
+  display:none;
+}
 
 /* header */
 
@@ -427,7 +429,7 @@ footer {
   }
 
   .sp-br{
-    display: none;
+    display: block;
   }
 
   .about-list {
@@ -448,7 +450,7 @@ footer {
   }
 
   .v_line_left2 {
-    height: 280px;
+    height: 370px;
   }
 
   .skill-list {
