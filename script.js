@@ -28,7 +28,6 @@ $('.burger-btn').on('click',function(){
 });
 
 $('.nav-list').on('click',function(){
-  $('.nav-wrapper').fadeOut(300);
   $('.burger-btn').removeClass('cross');
 });
 
