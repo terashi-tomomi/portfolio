@@ -456,21 +456,21 @@ footer {
   .skill-list {
     display: flex;
     justify-content:space-around;
-    margin:0 15px;
+    margin:0 10px;
   }
 
   .skill-item-bgi{
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
   }
 
   .skill-list p{
-    line-height: 160px;
+    line-height: 120px;
     font-size: 16px;
   }
 
   .skill-item{
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .skill-item:last-of-type{
@@ -480,7 +480,7 @@ footer {
   .skill-text {
     margin:0 15px;
   }
-
+  
 /* contact */
 
   iframe{
