@@ -39,6 +39,5 @@ $('.nav-list').on('click',function(){
     $('body').removeClass('noscroll');
   });
 
-
 }
   
